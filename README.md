@@ -1,6 +1,6 @@
 # Shopping Cart System - Lab3
 
-Why I chose a class for ShoppingCart?
+## Why I chose a class for ShoppingCart?
 
 I used a class for ShoppingCart because it represents a shared, mutable entity that multiple parts of the program can modify and reference. 
 A shopping cart naturally behaves like a single, ongoing session object that changes as a user adds or removes items. 
@@ -9,7 +9,7 @@ both references point to the same object in memory.
 This allows updates made inside one function (like addItem or clearCart) to persist outside of it, 
 mimicking how a real-world cart maintains its state throughout a shopping session.
 
-Why I chose structs for Product and Order?
+## Why I chose structs for Product and Order?
 
 Product and Order were implemented as structs because they are value types that represent independent, immutable data snapshots. 
 Each Product is defined by its attributes (ID, name, price, category, description), and when copied or assigned, it should not affect the original. 
@@ -30,7 +30,7 @@ item2 is a copy of item1, so updating item2 does not affect item1.
 This demonstrates value semantics, where each struct instance maintains its own independent data. 
 This behavior is important for ensuring that cart items or products don’t unintentionally modify each other.
 
-Challenges faced and how I solved them
+## Challenges faced and how I solved them
 
 One main challenge was managing mutability and shared state between the cart, products, and orders. 
 Initially, I considered making everything a class, but that led to unintended shared references between Order and ShoppingCart. 
