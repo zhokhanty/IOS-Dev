@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "Imagine Dragons.jpg",
+      "idiom" : "universal"
+    },
+    {
+      "idiom" : "iphone"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
