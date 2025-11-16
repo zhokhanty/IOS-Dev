@@ -39,3 +39,38 @@ Another challenge was implementing error handling for invalid product prices. I 
 ProductError enum and throwing an exception when a price ≤ 0 is provided.
 Finally, balancing readability with robustness required thoughtful naming and encapsulation — 
 for example, making items a private(set) property in ShoppingCart to prevent unauthorized modification while still allowing read access.
+
+
+# Music Player - Lab6
+
+## Overview
+
+This project is a simple but polished iOS Music Player built using UIKit and AVAudioPlayer.
+It demonstrates proper layout with UIStackView, user interaction handling, audio playback, progress tracking, and system icons.
+
+## The app supports 
+    Play / Pause
+    Next / Previous track
+    Automatic track switching with duration
+    Track image, title & artist
+    Uses AVAudioPlayer for playback
+    Shuffle / Repeat Modes
+    
+## Apple SF Symbols:
+    play.fill
+    pause.fill
+    backward.fill
+    forward.fill
+    shuffle / shuffle.circle.fill
+    repeat / repeat.1
+
+## Bonus Tasks Completed
+
+    1. Progress Bar: user can drag the slider to seek within the track
+    2. Track Duration Display: consist by current playback time (MM:SS) and total track duration (MM:SS)
+    3. Artist Name Display: located under the track name and differs with font styling (smaller and lighter than track name)
+    4. Shuffle & Repeat Modes: 
+        Shuffle — randomizes playback order 
+        Repeat All — loops whole playlist
+        Repeat One — loops the current track
+        All of the buttons differs by visual via tint
